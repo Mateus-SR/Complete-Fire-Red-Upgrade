@@ -11,19 +11,19 @@
 [MAIN_COLOUR][07][SHADOW_COLOUR][06]+
 
 #org @gText_Power
-Power: 
+Força: 
 
 #org @gText_OHKO
 OHKO
 
 #org @gText_Acc
-Acc: 
+Pre: 
 
 #org @gText_NoMiss
 No Miss
 
 #org @gText_Contact
-Contact
+Contato
 
 #org @gText_NoContact
 No Contact
@@ -35,7 +35,7 @@ Reset Lowered Stats
 + All Stats
 
 #org @gText_CritHitsPlus
-+ Critical Hit Chance
++ Chance Crítico
 
 #org @gText_FollowMe
 Follow Me

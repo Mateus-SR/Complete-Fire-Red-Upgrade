@@ -6,6 +6,8 @@
 
 extern struct TextPrinter sTextPrinters[];
 
+#define SPEED_LIMIT 4
+
 bool8 IsAutoScrollEnabled(void)
 {
 	#if (defined AUTOSCROLL_TEXT_BY_HOLDING_R || defined DEBUG_AUTO_SCROLL)
@@ -43,7 +45,7 @@ bool32 RunTextPrintersForInstantText(void)
 	{
 		if (sTextPrinters[i].active != 0)
 		{
-			for (j = 0; j < 0x400; j++)
+			for (j = 0; j < SPEED_LIMIT; j++)
 			{
 				u32 oldState;
 				u32 newState;
@@ -56,6 +58,11 @@ bool32 RunTextPrintersForInstantText(void)
 				{
 					if (sTextPrinters[i].callback != 0)
 						sTextPrinters[i].callback(&sTextPrinters[i].printerTemplate, result);
+
+					if (j == SPEED_LIMIT - 1)
+           				{
+                		CopyWindowToVram(sTextPrinters[i].printerTemplate.windowId, 2);
+            			}
 				}
 				else if (result == 3)
 				{
