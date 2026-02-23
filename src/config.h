@@ -164,8 +164,8 @@ enum //These vars need to be one after the other (hence the enum)
 #define MAX_COINS_DIGITS 9	//Max number of digits for game corner coins (eg. 4 = 9999, 9 = 999,999,999). maximum of 9
 
 /*===== Badge Obedience Options =====*/
-#define BASE_OBEDIENCE_LEVEL	10
-#define BADGE_1_OBEDIENCE_LEVEL	10
+#define BASE_OBEDIENCE_LEVEL	16
+#define BADGE_1_OBEDIENCE_LEVEL	16
 #define BADGE_2_OBEDIENCE_LEVEL 30
 #define BADGE_3_OBEDIENCE_LEVEL 30
 #define BADGE_4_OBEDIENCE_LEVEL 50
@@ -252,8 +252,8 @@ enum //These vars need to be one after the other (hence the enum)
 //#define HOOPA_CHANGE_IN_PC //Hoopa-Unbound will revert to confined form when placed in or withdrawn from a box
 #define SHAYMIN_CHANGE_IN_PC //Shaymin-Sky will revert to sky from when placed in or withdrawn from a box
 //#define HIGH_PITCH_MEGA_PRIMAL_CRY //Mega Pokemon cries will be higher pitched. This is useful if you're using the base form cries for Mega Evolutions
-//#define CUSTOM_MULTICHOICE //Adds JPAN's custom multichoice menus (see documentation)
-//#define SCROLLING_MULTICHOICE //Enables scrolling multichoice menus by using special 0x158.
+#define CUSTOM_MULTICHOICE //Adds JPAN's custom multichoice menus (see documentation)
+#define SCROLLING_MULTICHOICE //Enables scrolling multichoice menus by using special 0x158.
 //#define REPLACE_SOME_VANILLA_SPECIALS //Replaces the sp07C, sp07D, sp09E, sp156, sp18B, & the Coins scripting commands with modified versions. Breaks vanilla FR compatability.
 #define REPLACE_ASH_WEATHER_WITH_WHITE_SANDSTORM //Replaces the falling ash weather effect with a white version of the sandstorm weather effect
 //#define ONLY_CHECK_ITEM_FOR_HM_USAGE //Allows HMs to be used if the HM is the Bag, and as long as there is a Pokemon in the party that can learn the HM

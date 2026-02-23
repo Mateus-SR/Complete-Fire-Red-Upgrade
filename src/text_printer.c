@@ -6,7 +6,7 @@
 
 extern struct TextPrinter sTextPrinters[];
 
-#define SPEED_LIMIT 4
+#define SPEED_LIMIT 3
 
 bool8 IsAutoScrollEnabled(void)
 {
